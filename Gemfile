@@ -31,6 +31,9 @@ gem 'foundation-rails', '~> 5.0.0'
 # Authentication & authorization
 gem 'devise'
 
+# Stripe for payments
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
