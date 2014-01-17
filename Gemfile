@@ -28,6 +28,8 @@ gem 'haml-rails', '>= 0.4'
 gem 'compass-rails'
 gem 'foundation-rails', '~> 5.0.0'
 
+# Authentication & authorization
+gem 'devise'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
