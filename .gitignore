@@ -11,6 +11,8 @@
 /log/*.log
 /tmp
 
+config/stripe.yml
+
 *.gem
 *.rbc
 .config
