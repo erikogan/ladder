@@ -6,9 +6,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: vissicitude_development
+  database: ladder_development
   pool: 5
-  username: vissicitude
+  username: ladder
   password: ";LtpQ[p31oCGNP"
 
 # Warning: The database defined as "test" will be erased and
@@ -17,15 +17,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: vissicitude_test
+  database: ladder_test
   pool: 5
-  username: vissicitude
+  username: ladder
   password: ";LtpQ[p31oCGNP"
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: vissicitude_production
+  database: ladder_production
   pool: 5
-  username: vissicitude
+  username: ladder
   password:

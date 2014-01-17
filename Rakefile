@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Vissicitude::Application.load_tasks
+Ladder::Application.load_tasks

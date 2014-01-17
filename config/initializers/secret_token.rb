@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Vissicitude::Application.config.secret_key_base = '13e7d83b621088ff5589a4f8c115bf01492a19b0cb37df0f88d187f34873db1f9594fdcbc0522de46c82a3fe90ce6670b9240f62e19e54433879b2e9b06a5fc6'
+Ladder::Application.config.secret_key_base = '13e7d83b621088ff5589a4f8c115bf01492a19b0cb37df0f88d187f34873db1f9594fdcbc0522de46c82a3fe90ce6670b9240f62e19e54433879b2e9b06a5fc6'
