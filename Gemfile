@@ -24,6 +24,10 @@ gem 'jquery-rails'
 # Haml, the One True Format
 gem 'haml-rails', '>= 0.4'
 
+# Add Foundation
+gem 'compass-rails'
+gem 'foundation-rails', '~> 5.0.0'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
