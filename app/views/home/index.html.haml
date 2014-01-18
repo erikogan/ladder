@@ -51,18 +51,18 @@
   .medium-4.columns
     %a{href: '', class: 'button pledge radius round'} Take the Pledge
 
-.give-and-get
+#give_modal.give-and-get.reveal-modal{'data-reveal' => true}
   %h3 Give & Get
   .card.row
 
-    %div.medium-7.columns
+    .medium-7.columns
 
       .card
         = image_tag 'giftcard.png'
         .type Gift Card for Clothes
         .type-description Survivors often leave their homes with nothing but the clothes on their back.
 
-    %div.ask.medium-4.columns
+    .ask.medium-4.columns
 
       %p
         Give a gift card for a survivor and get a wrist band.
@@ -84,11 +84,11 @@
 
   .wristband.row
 
-    %div.medium-7.columns
+    .medium-7.columns
 
       = image_tag 'wristband.png'
 
-    %div.medium-4.columns
+    .medium-4.columns
 
       %p
         %a{href: '', id: 'give-and-get-button', class: 'button pledge radius round'} Give & Get
@@ -116,7 +116,7 @@
           });
           e.preventDefault();
         });
-
+  %a.close-reveal-modal &#215;
 .next-steps
   %div
     %h3 Learn More
