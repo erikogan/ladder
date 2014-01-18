@@ -1,0 +1,12 @@
+***************
+*** 25,28 ****
+  
+    = yield
+  
+    = javascript_include_tag "application"
+--- 25,29 ----
+  
+    = yield
+  
++   = typekit_include_tag 'rcr3obb'
+    = javascript_include_tag "application"
