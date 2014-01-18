@@ -7,13 +7,13 @@ function connected() {
     FB.api("/me", function(a) {
         console.log("Good to see you, " + a.name + ".");
         email = a.email;
-        $.get("/register.php?fb_id=" + a.id + "&first_name=" + a.first_name + "&last_name=" + a.last_name + "&email=" +
+        $.get("http://aws.leadandpledge.org/register.php?fb_id=" + a.id + "&first_name=" + a.first_name + "&last_name=" + a.last_name + "&email=" +
                 a.email + "&gender=" + a.gender);
         $('#give_modal').foundation('reveal', 'open');
     });
     FB.api("/me/friends", {fields: 'id'} , function(response) {
         console.log(response);
-        $.post( "/friends.php?fb_id="+fb_id, JSON.stringify(response.data) );
+        $.post( "http://aws.leadandpledge.org/friends.php?fb_id="+fb_id, JSON.stringify(response.data) );
     });
     $('#give1').show();
     $('#pledge1').hide();
@@ -31,17 +31,20 @@ window.fbAsyncInit = function() {
     });
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
+        logged_in = true;
         fb_id = response.authResponse.userID;
         $('#give1').show();
         $('#pledge1').hide();
+        $('#give_modal').foundation('reveal', 'open');
       }
+      FB.Event.subscribe("auth.statusChange", function(a) {
+        if (a.status === "not_authorized") return;
+        if(logged_in == false) {
+            connected();
+        }
+      }); 
     });
 
-    FB.Event.subscribe("auth.statusChange", function(a) {
-        if (a.status === "not_authorized") return;
-        logged_in = true;
-        connected();
-    }); 
 };
 
 (function(a, b, c) {
