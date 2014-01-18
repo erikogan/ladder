@@ -2,6 +2,8 @@
 
 %p Domestic Violence is a “men’s issue” that affects everyone.
 
+#fb-root
+
 .facts.row
   .large-9.columns
     %ul
@@ -48,8 +50,11 @@
       %li I pledge to learn and use fair fighting techniques.
       %li I believe that I can lead by taking this pledge.
 
-  .medium-4.columns
-    %a{href: '', class: 'button pledge radius round'} Take the Pledge
+
+  .medium-5.columns
+    %div#pledge1{class: 'button pledge radius round', style:'display:block' }
+      <fb:login-button show-faces="true" size="xlarge" perms="email" max-rows="1">Take the Pledge</fb:login-button>
+    %a#give1{class: 'button pledge radius round', onclick:"$('#give_modal').foundation('reveal', 'open'); ", style:'display:none '} Give and Get
 
 #give_modal.give-and-get.reveal-modal{'data-reveal' => true}
   %h3 Give & Get
@@ -111,6 +116,7 @@
           handler.open({
             name: 'Lead and Pledge',
             description: 'Give & Get ($20.00)',
+            email: email,
             amount: 2000,
 
           });
