@@ -2,8 +2,8 @@
 
 %p Domestic Violence is a men’s issue that affects everyone.
 
-.facts
-  %div
+.facts.row
+  .large-8.columns
     %ul
       %li
         Boys who witness domestic violence are twice as likely to become abusers.
@@ -37,120 +37,118 @@
       %br/
       Be a leader. Take the pledge. End Domestic Violence.
 
-  .pledge
-    %h3 The Pledge
-    .medium-6.columns
-      %ul
-        %li I pledge to treat women and children with honor and respect.
-        %li I pledge to speak out against those who do not.
-        %li
-          I pledge to educate myself and others on anger management and fair fighting techniques.
-        %li I believe that I can lead by taking this pledge.
+.pledge.row
+  %h3.medium-12.columns The Pledge
+  .medium-6.columns
+    %ul
+      %li I pledge to treat women and children with honor and respect.
+      %li I pledge to speak out against those who do not.
+      %li
+        I pledge to educate myself and others on anger management and fair fighting techniques.
+      %li I believe that I can lead by taking this pledge.
 
-    .medium-6.columns
-      %a{href: '', class: 'button pledge radius round'} Take the Pledge
+  .medium-6.columns
+    %a{href: '', class: 'button pledge radius round'} Take the Pledge
 
-  .next-steps
-    .medium-6.medium-push-6.columns
-    .giveandget.row
+.give-and-get.row
 
-      %h3 Give And Get
-      .medium-6.columns
-        %p
+  %h3 Give And Get
+  .medium-6.columns
+    %p
 
-          Buy a gift card for a survivor and receive a wrist band.
-          The purple color is for awareness of domestic violence and is a conversation starter.
-          The message "I Pledged" is printed on the outside and "Be A Leader" is printed on the inside allowing you to display either message.
-          Wearing it acts as a constant remind you of your pledge to be a leader.
+      Buy a gift card for a survivor and receive a wrist band.
+      The purple color is for awareness of domestic violence and is a conversation starter.
+      The message "I Pledged" is printed on the outside and "Be A Leader" is printed on the inside allowing you to display either message.
+      Wearing it acts as a constant remind you of your pledge to be a leader.
 
-      .medium-6.columns
-      = image_tag('wristband.png')
-      = image_tag('giftcard.png')
+  .medium-6.columns
+    = image_tag('wristband.png')
+    = image_tag('giftcard.png')
 
-      .medium-6.columns
-        %a{href: '', class: 'button pledge radius round'} Give and Get
+  .medium-6.columns
+    %a{href: '', class: 'button pledge radius round'} Give and Get
 
-    .medium-6.medium-pull-6.columns
+.next-steps.row
+  %div.medium-6.columns
+    %h3 Learn More
 
-      %h3 Learn More
+    %dl.accordion{'data-accordion' => true}
+      %dd
+        %a{href: '#respecting_women'} Respecting Women and Children
+        #respecting_women.content
 
-      %dl.accordion{'data-accordion' => true}
-        %dd
-          %a{href: '#respecting_women'} Respecting Women and Children
-          #respecting_women.content
+          %p
 
-            %p
+            Disrespectful language and actions perpetuates a culture of
+            acceptability. By shifting our language we can shift the culture.
 
-              Disrespectful language and actions perpetuates a culture of
-              acceptability. By shifting our language we can shift the culture.
+          %p
 
-            %p
+            Be a leader and role model for your children. They are watching you.
+            Use your powerful influence to model respect for others to
+            your sons and daughters, other children in your neighborhood, and
+            even other men and women.
 
-              Be a leader and role model for your children. They are watching you.
-              Use your powerful influence to model respect for others to
-              your sons and daughters, other children in your neighborhood, and
-              even other men and women.
+          %p
 
-            %p
+            Demonstrate that women are to be valued for more than physical
+            aspects in what you say and do. Show that character, integrity,
+            and feminine approaches to problems are valuable. Be willing to
+            confront your children about improper behavior that you see.
 
-              Demonstrate that women are to be valued for more than physical
-              aspects in what you say and do. Show that character, integrity,
-              and feminine approaches to problems are valuable. Be willing to
-              confront your children about improper behavior that you see.
+          %p
+            %a{href:'http://lancaster.unl.edu/family/parenting/model_537.shtml'} Learn More
 
-            %p
-              %a{href:'http://lancaster.unl.edu/family/parenting/model_537.shtml'} Learn More
+      %dd
+        %a{href: '#anger_management'} Anger Management
+        #anger_management.content
 
-        %dd
-          %a{href: '#anger_management'} Anger Management
-          #anger_management.content
+          %p
 
-            %p
+            It is important to realize that anger is a completely normal
+            human emotion.  But when it gets out of control it can become
+            destructive and lead to violence. It can also make you feel a
+            prisnor to unpredictable, powerful emotions.
 
-              It is important to realize that anger is a completely normal
-              human emotion.  But when it gets out of control it can become
-              destructive and lead to violence. It can also make you feel a
-              prisnor to unpredictable, powerful emotions.
+          %p
 
-            %p
+            Anger is a natural, adaptive response to threats and evolved to
+            help us fight and to defend ourselves when we are
+            attacked. Anger is accompanied by physiological and biological
+            changes including increases in heart rate and blood pressure,
+            and the release of powerful emotional hormones like adrenaline,
+            and noradrenaline.
 
-              Anger is a natural, adaptive response to threats and evolved to
-              help us fight and to defend ourselves when we are
-              attacked. Anger is accompanied by physiological and biological
-              changes including increases in heart rate and blood pressure,
-              and the release of powerful emotional hormones like adrenaline,
-              and noradrenaline.
+          %p
 
-            %p
+            It is possible to learn techniques to help you take controll
+            of your anger, and prevent it from escalating to violence.
 
-              It is possible to learn techniques to help you take controll
-              of your anger, and prevent it from escalating to violence.
+          %p
+            %a{href: 'http://www.ucdmc.ucdavis.edu/hr/hrdepts/asap/anger.html'} Learn More
+      %dd
+        %a{href: '#fair-fighting'} Fair Fighting
+        #fair-fighting.content
 
-            %p
-              %a{href: 'http://www.ucdmc.ucdavis.edu/hr/hrdepts/asap/anger.html'} Learn More
-        %dd
-          %a{href: '#fair-fighting'} Fair Fighting
-          #fair-fighting.content
+          %p
 
-            %p
+            In any relationship, conflict is inevitable. How anger
+            is expressed is a learned behavior, and thus can be changed.
 
-              In any relationship, conflict is inevitable. How anger
-              is expressed is a learned behavior, and thus can be changed.
+          %p
 
-            %p
+            In an unfair fight, tempers flare, voices are raised, and
+            insults are exchanged. This often ends with bitterness,
+            distrust, resentment, and loss of intimacy, leading to more
+            arguments.
 
-              In an unfair fight, tempers flare, voices are raised, and
-              insults are exchanged. This often ends with bitterness,
-              distrust, resentment, and loss of intimacy, leading to more
-              arguments.
+          %p
 
-            %p
+            Fair fights resolve confrontations without these negative
+            repurcussions. The skills of active listening and a
+            collaborative attitude allows differences to be negotiated. Fair
+            fights clear up problems and increase intimacy by increasing
+            understand between partners.
 
-              Fair fights resolve confrontations without these negative
-              repurcussions. The skills of active listening and a
-              collaborative attitude allows differences to be negotiated. Fair
-              fights clear up problems and increase intimacy by increasing
-              understand between partners.
-
-            %p
-              %a{href:'http://ub-counseling.buffalo.edu/fighting.shtml'} Learn More
+          %p
+            %a{href:'http://ub-counseling.buffalo.edu/fighting.shtml'} Learn More
