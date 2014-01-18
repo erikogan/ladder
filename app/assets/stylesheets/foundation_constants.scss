@@ -995,10 +995,10 @@ $tabs-navigation-font-family: $header-font-family;
 // $has-tip-cursor-type: help;
 
 // $tooltip-padding: rem-calc(12);
-// $tooltip-bg: #333;
+$tooltip-bg: scale-color($primary-color, $lightness: -50%);
 // $tooltip-font-size: rem-calc(14);
 // $tooltip-font-weight: normal;
-// $tooltip-font-color: #fff;
+$tooltip-font-color: #fff;
 // $tooltip-line-height: 1.3;
 // $tooltip-close-font-size: rem-calc(10);
 // $tooltip-close-font-weight: normal;
