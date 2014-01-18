@@ -30,12 +30,11 @@
           Intimate partner violence causes 18.5
           million mental health consultations each year.
 
-    %p
-
-      To end domestic violence we
-      need to transform our culture. We need leaders who speak up against
-      others who disrespect and mistreat women and children. We
-      need leaders to be role models of correct behavior in our communities.
+    %pledge
+      To end domestic violence we need to transform our culture. We need
+      leaders who speak up against others who disrespect and mistreat women
+      and children. We need leaders to be role models of correct behavior in
+      our communities.
 
       %br/
       Be a leader. Take the pledge. End Domestic Violence.
@@ -98,31 +97,36 @@
       %p
         %a{href: '', id: 'give-and-get-button', class: 'button pledge radius round'} Give & Get
 
-      %script{src: "https://checkout.stripe.com/checkout.js"}
-
-      :javascript
-        var handler = StripeCheckout.configure({
-          key: 'pk_test_0aalOfgxrJHVmVhJIq2pqhat',
-          image: '/assets/square.png',
-          token: function(token, args) {
-            // Use the token to create the charge with a server-side script.
-          },
-          currency:'USD',
-          billingAddress: true,
-          shippingAddress: true
-        });
-
-        document.getElementById('give-and-get-button').addEventListener('click', function(e) {
-          handler.open({
-            name: 'Lead and Pledge',
-            description: 'Give & Get ($20.00)',
-            email: email,
-            amount: 2000,
-
-          });
-          e.preventDefault();
-        });
   %a.close-reveal-modal &#215;
+
+#success_dialog.give-and-get-success.reveal-modal{'data-reveal' => true}
+  .row
+    %p
+      %span{class:"ui-icon ui-icon-circle-check", style:"float:left; margin:0 7px 50px 0;"}
+    %h3 Thanks for leading with your wallet!
+  .row
+    .small-6.columns
+      %p
+        The
+        %a{href: 'http://www.jadensladder.org/'} Jaden's Ladder
+        and
+        %a{href: 'http://www.peacehouse.org/'} Peace House
+        are very thankful for your donation.
+      %p
+        We hope that you enjoy wearing your wrist band as a sign of your leadership on domestic violence.
+    .small-6.columns
+      %p
+        = image_tag 'wristband.png'
+
+#failure_dialog.give-and-get-success.reveal-modal{'data-reveal' => true}
+  .row
+    %p
+      %span{class:"ui-icon ui-icon-circle-check", style:"float:left; margin:0 7px 50px 0;"}
+    %h3 Oh no! Something went wrong!
+  .row
+    %p
+      Thanks for trying to lead with your wallet. Were really sorry, but something went wrong. Please try again later.
+
 .next-steps
   %div
     %h3 Learn More
@@ -159,18 +163,17 @@
 
       #anger_management.content
         %p
-          Anger is a normal
-          human emotion.  But when it gets out of control it can become
-          destructive and lead to violence. It can also make you feel a
-          prisoner to unpredictable, powerful emotions.
+          Anger is a normal human emotion.  It is an adaptive response to
+          threats and evolved to help us defend ourselves when we are
+          attacked. Anger is accompanied by physiological and biological
+          changes including increases in heart rate and blood pressure, and
+          the release of powerful emotional hormones like adrenaline, and
+          noradrenaline.
 
         %p
-          Anger is a natural, adaptive response to threats and evolved to
-          help us fight and to defend ourselves when we are
-          attacked. Anger is accompanied by physiological and biological
-          changes including increases in heart rate and blood pressure,
-          and the release of powerful emotional hormones like adrenaline,
-          and noradrenaline.
+          But when it gets out of control it can become destructive and lead
+          to violence. It can also make you feel a prisoner to unpredictable,
+          powerful emotions.
 
         %p
           It is possible to learn techniques to help you take controll
@@ -186,15 +189,14 @@
           is expressed is a learned behavior, and thus can be changed.
 
         %p
-          In an unfair fight, tempers flare, voices are raised, and
-          insults are exchanged. This often ends with bitterness,
-          distrust, resentment, and loss of intimacy, leading to more
-          arguments.
+          In an unfair fight, tempers flare, voices are raised, and insults
+          are exchanged. Bitterness, distrust, resentment, and loss of
+          intimacy often result and lead to more arguments.
 
         %p
           Fair fights resolve confrontations without these negative
-          repurcussions. The skills of active listening and a
-          collaborative attitude allows differences to be negotiated. Fair
+          repercussions. Active listening and a
+          collaborative attitude allow differences to be negotiated. Fair
           fights clear up problems and increase intimacy by increasing
           understand between partners.
 
