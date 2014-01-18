@@ -29,6 +29,10 @@ $darkest-primary: scale-color($primary-color, $lightness: -50%);
   }
 }
 
+div.pledge.row.panel {
+  margin-bottom: 1.5rem;
+}
+
 a.button.pledge {
     font-family: $header-font-family;
     font-size: 2.75rem;
