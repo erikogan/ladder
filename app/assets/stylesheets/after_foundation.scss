@@ -1,7 +1,7 @@
 @import 'foundation_constants';
 
-$darker-primary: scale-color($primary-color, $lightness: -20%);
-$darkest-primary: scale-color($primary-color, $lightness: -30%);
+$darker-primary: scale-color($primary-color, $lightness: -30%);
+$darkest-primary: scale-color($primary-color, $lightness: -50%);
 
 .top-bar {
   padding: 2em 0;
@@ -12,6 +12,15 @@ $darkest-primary: scale-color($primary-color, $lightness: -30%);
     line-height: 1;
     a.button.pledge {
       margin-bottom: .5em;
+      border: 1px solid $darker-primary;
+      background-color: #fff;
+      &, &:visited {
+        color: $darker-primary
+      }
+      &:hover {
+        color: #fff;
+        background-color: $darkest-primary;
+      }
     }
 
     &.indent {
@@ -23,10 +32,13 @@ $darkest-primary: scale-color($primary-color, $lightness: -30%);
 a.button.pledge {
     font-family: $header-font-family;
     font-size: 2.75rem;
-    border: 1px solid #fff;
-    background-color: $darker-primary;
+    border: 1px solid $darkest-primary;
+    &, &:visited {
+      background-color: $darker-primary;
+    }
     &:hover {
-      background-color: $darkest-primary;
+      background-color: #fff;
+      color: $darkest-primary;
     }
 }
 
