@@ -2,8 +2,8 @@
 
 %p Domestic Violence is a men’s issue that affects everyone.
 
-.facts.row
-  .large-8
+.facts
+  %div
     %ul
       %li
         Boys who witness domestic violence are twice as likely to become abusers.
@@ -37,7 +37,7 @@
       %br/
       Be a leader. Take the pledge. End Domestic Violence.
 
-  .pledge.row
+  .pledge
     %h3 The Pledge
     .medium-6.columns
       %ul
@@ -51,11 +51,8 @@
       %a{href: '', class: 'button pledge radius round'} Take the Pledge
 
 
-  .next-steps.row
-    .medium-6.medium-push-6.columns
-      %h3 Get the Wristband
-      = image_tag('wristband.png')
-    .medium-6.medium-pull-6.columns
+  .next-steps
+    .medium-6.columns
       %h3 Learn More
 
       %dl.accordion{'data-accordion' => true}
