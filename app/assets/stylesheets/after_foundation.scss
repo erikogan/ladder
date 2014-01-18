@@ -36,6 +36,9 @@ div.pledge.row.panel, div.give-and-get {
 
 div.next-steps {
   margin-bottom: 18rem;
+  .tabs-content {
+    min-height: 17rem;
+  }
 }
 
 a.button.pledge {
