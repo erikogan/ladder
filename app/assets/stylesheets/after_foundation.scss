@@ -1,1 +1,24 @@
 @import 'foundation_constants';
+
+.top-bar {
+  padding: 2em 0;
+  h1 {
+    color: #fff;
+    padding-left: 2em;
+    line-height: 1;
+    a.button {
+      font-family: $header-font-family;
+      font-size: 2.75rem;
+      margin-bottom: .5em;
+      border: 1px solid #fff;
+      background-color: scale-color($primary-color, $lightness: -17%);
+      &:hover {
+        background-color: scale-color($primary-color, $lightness: -25%);
+
+      }
+    }
+    &.indent {
+      padding-left: 3em;
+    }
+  }
+}
