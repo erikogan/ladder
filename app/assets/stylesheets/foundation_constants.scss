@@ -101,6 +101,12 @@ $primary-color: #6e598b;
 // $cursor-help-value: help;
 // $cursor-text-value: text;
 
+
+$header-font-family: "league-gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
+
+$body-font-family: "garamond-premier-pro", "Georgia", serif;
+
 // Accordion
 
 // $include-html-accordion-classes: $include-html-classes;
@@ -109,9 +115,9 @@ $primary-color: #6e598b;
 // $accordion-navigation-bg-color: #efefef  ;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
-// $accordion-navigation-font-color: #222;
-// $accordion-navigation-font-size: rem-calc(16);
-// $accordion-navigation-font-family: $body-font-family;
+$accordion-navigation-font-color: $primary-color;
+$accordion-navigation-font-size: rem-calc(16);
+$accordion-navigation-font-family: $header-font-family;
 
 // $accordion-content-padding: $column-gutter/2;
 // $accordion-content-active-bg-color: #fff;
@@ -1080,10 +1086,6 @@ $topbar-height: 16em;
 // $include-open-sans: true;
 
 // We use these to control header font styles
-$header-font-family: "league-gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font-weight: normal;
-
-$body-font-family: "garamond-premier-pro", "Georgia", serif;
 // $header-font-weight: 300;
 // $header-font-style: normal;
 // $header-font-color: #222;

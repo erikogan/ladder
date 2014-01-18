@@ -17,7 +17,7 @@
             %ul
               %li
                 %h1
-                  %a{href: '', class: 'button radius'} Take the Pledge
+                  %a{href: '', class: 'button pledge radius round'} Take the Pledge
               %li
                 %ul
                   %li
@@ -31,3 +31,6 @@
 
     = typekit_include_tag 'zdl6skz'
     = javascript_include_tag "application"
+    = javascript_include_tag 'foundation'
+    :javascript
+      $(document).foundation();

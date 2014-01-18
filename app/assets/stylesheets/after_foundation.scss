@@ -1,24 +1,43 @@
 @import 'foundation_constants';
 
+$darker-primary: scale-color($primary-color, $lightness: -20%);
+$darkest-primary: scale-color($primary-color, $lightness: -30%);
+
 .top-bar {
   padding: 2em 0;
+  border-bottom: 4px solid $darker-primary;
   h1 {
     color: #fff;
     padding-left: 2em;
     line-height: 1;
-    a.button {
-      font-family: $header-font-family;
-      font-size: 2.75rem;
+    a.button.pledge {
       margin-bottom: .5em;
-      border: 1px solid #fff;
-      background-color: scale-color($primary-color, $lightness: -17%);
-      &:hover {
-        background-color: scale-color($primary-color, $lightness: -25%);
-
-      }
     }
+
     &.indent {
       padding-left: 3em;
     }
   }
+}
+
+a.button.pledge {
+    font-family: $header-font-family;
+    font-size: 2.75rem;
+    border: 1px solid #fff;
+    background-color: $darker-primary;
+    &:hover {
+      background-color: $darkest-primary;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $darkest-primary;
+}
+
+footer {
+  background-color: $primary-color;
+  border-top: 4px solid $darker-primary;
+  margin-top: 1em;
+  padding: 1em 0;
+  color: #fff
 }

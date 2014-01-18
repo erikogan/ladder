@@ -7,7 +7,7 @@
     %li
       Boys who witness domestic violence are twice as likely to abuse
       their own partners and children when they become adults.
-      %span.footnote{:style => "display:none"}
+      %span.footnote{style: "display:none"}
         Strauss, Gelles, and Smith, “Physical Violence in American
         Families: Risk Factors and Adaptations to Violence” in 8,145
         Families. Transaction Publishers (1990).
@@ -15,85 +15,89 @@
       The cost of intimate partner violence exceeds
       $5.8 billion each year, $4.1 billion of which is for
       direct medical and mental health services.
-      %span.footnote{:style => "display:none"}
+      %span.footnote{style: "display:none"}
         Costs of Intimate Partner Violence Against Women in the United
         States. 2003. Centers for Disease Control and Prevention,
         National Centers for Injury Prevention and Control. Atlanta, GA.
     %li
       Intimate partner violence results in more than 18.5
       million mental health care visits each year.
-      %span.footnote{:style => "display:none"}
+      %span.footnote{style: "display:none"}
         Costs of Intimate Partner Violence Against Women in the United
         States. 2003. Centers for Disease Control and Prevention, National
         Centers for Injury Prevention and Control. Atlanta, GA.  Tjaden,
         Patricia & Thoennes, Nancy.
   %p
     In order to end domestic violence we need leaders who can take an
-    active stance against the mistreatment of women and children, by speaking 
+    active stance against the mistreatment of women and children, by speaking
     against others who do so.
   %p
     We also need to educate ourselves about anger management and fair fighting
     techniques, to prevent arguments from escalating to violence.
-  .pledge
-    %h3 The Pledge
-    %ul
-      %li I pledge to treat women and children with honor and respect.
-      %li I pledge to speak out against those who do not.
-      %li
-        I pledge to educate myself and others on anger management and fair fighting techniques.
-        %br/
-      %li I believe that I can lead by taking this pledge.
+
+  .pledge.row
+    %h3.small-12.columns The Pledge
+    .small-12.medium-6.columns
+      %ul
+        %li I pledge to treat women and children with honor and respect.
+        %li I pledge to speak out against those who do not.
+        %li
+          I pledge to educate myself and others on anger management and fair fighting techniques.
+          %br/
+        %li I believe that I can lead by taking this pledge.
+
+    .small-12.medium-6.columns
+      %a{href: '', class: 'button pledge radius round'} Take the Pledge
+
   %h3 Learn More
+
   %dl.accordion{'data-accordion' => true}
     %dd
-      %h4 
-        %a{href:'#panel1'} Respecting Women and Children
-      #panel1.content.active
+      %a{href: '#respecting_women'} Respecting Women and Children
+      #respecting_women.content
         %p
           Disrespectful language about women and children perpetuates a culture where it is acceptable
           to dishonor and objectify them. By shifting our language we can shift the
           culture.
-        %p 
+        %p
           Avoiding language based on hurtful assumptions
     %dd
-      %h4
-        %a{href:'#panel2'} Anger Management
-      #panel2.content
-        %p 
-           It is important to realize that anger is a completely normal
-           human emotion.  But when it gets out of control it can become
-           destructive and lead to violence. It can also make you feel a
-           prisnor to unpredictable, powerful emotions.
-        %p 
-           Anger is a natural, adaptive response to threats and evolved to
-           help us fight and to defend ourselves when we are
-           attacked. Anger is accompanied by physiological and biological
-           changes including increases in heart rate and blood pressure,
-           and the release of powerful emotional hormones like adrenaline,
-           and noradrenaline.
-        %p 
-           It is possible to learn techniques to help you take controll
-           of your anger, and prevent it from escalating to violence.
+      %a{href: '#anger_management'} Anger Management
+      #anger_management.content
         %p
-           %a{href:'http://www.ucdmc.ucdavis.edu/hr/hrdepts/asap/anger.html'} Learn More
-  %dd
-      %h4
-        %a{href:'#panel2'} Anger Management
-      #panel2.content
-        %p 
-           In any relationship, conflict is inevitable. How anger
-           is expressed is a learned behavior, and thus can be changed.
-        %p 
-           In an unfair fight, tempers flare, voices are raised, and
-           insults are exchanged. This often ends with bitterness,
-           distrust, resentment, and loss of intimacy, leading to more
-           arguments.
-        %p 
-           Fair fights resolve confrontations without these negative
-           repurcussions. The skills of active listening and a
-           collaborative attitude allows differences to be negotiated. Fair
-           fights clear up problems and increase intimacy by increasing
-           understand between partners.
-        %p 
-           %a{href:'http://ub-counseling.buffalo.edu/fighting.shtml'} Learn More
+          It is important to realize that anger is a completely normal
+          human emotion.  But when it gets out of control it can become
+          destructive and lead to violence. It can also make you feel a
+          prisnor to unpredictable, powerful emotions.
+        %p
+          Anger is a natural, adaptive response to threats and evolved to
+          help us fight and to defend ourselves when we are
+          attacked. Anger is accompanied by physiological and biological
+          changes including increases in heart rate and blood pressure,
+          and the release of powerful emotional hormones like adrenaline,
+          and noradrenaline.
+        %p
+          It is possible to learn techniques to help you take controll
+          of your anger, and prevent it from escalating to violence.
+        %p
+          %a{href: 'http://www.ucdmc.ucdavis.edu/hr/hrdepts/asap/anger.html'} Learn More
+    %dd
+      %a{href: '#fair-fighting'} Fair Fighting
+      #fair-fighting.content
+        %p
+          In any relationship, conflict is inevitable. How anger
+          is expressed is a learned behavior, and thus can be changed.
+        %p
+          In an unfair fight, tempers flare, voices are raised, and
+          insults are exchanged. This often ends with bitterness,
+          distrust, resentment, and loss of intimacy, leading to more
+          arguments.
+        %p
+          Fair fights resolve confrontations without these negative
+          repurcussions. The skills of active listening and a
+          collaborative attitude allows differences to be negotiated. Fair
+          fights clear up problems and increase intimacy by increasing
+          understand between partners.
+        %p
+          %a{href:'http://ub-counseling.buffalo.edu/fighting.shtml'} Learn More
 
