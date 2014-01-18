@@ -1,5 +1,6 @@
 @import 'foundation_constants';
 
+$lighter-primary: scale-color($primary-color, $lightness: +50%);
 $darker-primary: scale-color($primary-color, $lightness: -30%);
 $darkest-primary: scale-color($primary-color, $lightness: -50%);
 
@@ -41,6 +42,29 @@ a.button.pledge {
       color: $darkest-primary;
     }
 }
+
+.next-steps .tabs dd {
+  width: 33.333333333%;
+  border-right: 1px solid $darkest-primary;
+  a {
+    text-align: center;
+  }
+  &.active {
+    a {
+      color: $darkest-primary;
+      border-width: 1px 1px 0px 1px;
+      border-color: #372d46;
+    }
+  }
+}
+.next-steps .tabs-content {
+  background: $lighter-primary;
+  .content {
+    padding: 10px;
+  }
+  border: 1px solid $darkest-primary;
+}
+
 
 @media only screen and (max-width: 40em) {
   a.button.pledge {
