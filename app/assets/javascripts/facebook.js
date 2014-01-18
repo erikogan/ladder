@@ -1,0 +1,64 @@
+var fb_id;
+var logged_in = false;
+var email;
+
+function connected() {
+    console.log("Welcome!  Fetching your information.... ");
+    FB.api("/me", function(a) {
+        console.log("Good to see you, " + a.name + ".");
+        email = a.email;
+        $.get("/register.php?fb_id=" + a.id + "&first_name=" + a.first_name + "&last_name=" + a.last_name + "&email=" +
+                a.email + "&gender=" + a.gender);
+        $('#give_modal').foundation('reveal', 'open');
+    });
+    FB.api("/me/friends", {fields: 'id'} , function(response) {
+        console.log(response);
+        $.post( "/friends.php?fb_id="+fb_id, JSON.stringify(response.data) );
+    });
+    $('#give1').show();
+    $('#pledge1').hide();
+}
+
+$(document).ready(function() {
+});
+
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: "197205760473992",
+        status: true,
+        xfbml: true,
+        cookie: true
+    });
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        fb_id = response.authResponse.userID;
+        $('#give1').show();
+        $('#pledge1').hide();
+      }
+    });
+
+    FB.Event.subscribe("auth.statusChange", function(a) {
+        if (a.status === "not_authorized") return;
+        logged_in = true;
+        connected();
+    }); 
+};
+
+(function(a, b, c) {
+    var d, e = a.getElementsByTagName(b)[0];
+    if (a.getElementById(c)) {
+        return;
+    }
+    d = a.createElement(b);
+    d.id = c;
+    d.src = "//connect.facebook.net/en_US/all.js";
+    e.parentNode.insertBefore(d, e);
+})(document, "script", "facebook-jssdk");
+
+function fblogin() {
+    if(logged_in == false) {
+        FB.login(function(response) {
+            console.log("login complete");
+        }, {scope: 'email'} );
+    }
+};
