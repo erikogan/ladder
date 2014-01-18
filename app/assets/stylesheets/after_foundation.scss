@@ -1,6 +1,6 @@
 @import 'foundation_constants';
 
-$lighter-primary: scale-color($primary-color, $lightness: +50%);
+$lighter-primary: scale-color($primary-color, $lightness: +70%);
 $darker-primary: scale-color($primary-color, $lightness: -30%);
 $darkest-primary: scale-color($primary-color, $lightness: -50%);
 
@@ -38,7 +38,7 @@ a.button.pledge {
       background-color: $darker-primary;
     }
     &:hover {
-      background-color: #fff;
+      background-color: $lighter-primary;
       color: $darkest-primary;
     }
 }
