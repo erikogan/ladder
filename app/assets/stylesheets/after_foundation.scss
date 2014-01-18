@@ -44,16 +44,12 @@ a.button.pledge {
 }
 
 .next-steps .tabs dd {
-  width: 33.333333333%;
-  border-right: 1px solid $darkest-primary;
   a {
     text-align: center;
   }
   &.active {
     a {
       color: $darkest-primary;
-      border-width: 1px 1px 0px 1px;
-      border-color: #372d46;
     }
   }
 }
@@ -62,7 +58,6 @@ a.button.pledge {
   .content {
     padding: 10px;
   }
-  border: 1px solid $darkest-primary;
 }
 
 
