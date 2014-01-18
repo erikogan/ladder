@@ -1,5 +1,6 @@
 @import 'foundation_constants';
 
+$lighter-primary: scale-color($primary-color, $lightness: +70%);
 $darker-primary: scale-color($primary-color, $lightness: -30%);
 $darkest-primary: scale-color($primary-color, $lightness: -50%);
 
@@ -41,10 +42,28 @@ a.button.pledge {
       background-color: $darker-primary;
     }
     &:hover {
-      background-color: #fff;
+      background-color: $lighter-primary;
       color: $darkest-primary;
     }
 }
+
+.next-steps .tabs dd {
+  a {
+    text-align: center;
+  }
+  &.active {
+    a {
+      color: $darkest-primary;
+    }
+  }
+}
+.next-steps .tabs-content {
+  background: $lighter-primary;
+  .content {
+    padding: 10px;
+  }
+}
+
 
 @media only screen and (max-width: 40em) {
   a.button.pledge {
