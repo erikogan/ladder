@@ -30,8 +30,12 @@ $darkest-primary: scale-color($primary-color, $lightness: -50%);
   }
 }
 
-div.pledge.row.panel {
-  margin-bottom: 1.5rem;
+div.pledge.row.panel, div.give-and-get {
+  margin-bottom: 18rem;
+}
+
+div.next-steps {
+  margin-bottom: 18rem;
 }
 
 a.button.pledge {
@@ -45,6 +49,27 @@ a.button.pledge {
       background-color: $lighter-primary;
       color: $darkest-primary;
     }
+}
+
+.card {
+  position: relative;
+  .type {
+    position: absolute;
+    top: 115px;
+    left: 225px;
+    width: 175px;
+    font-family: $header-font-family;
+    font-size: 1.5rem;
+    color: $darker-primary;
+  }
+  .type-description {
+    width: 450px;
+    padding-left: 30px;
+  }
+}
+
+div.wristband.row {
+  margin-top: 30px;
 }
 
 .next-steps .tabs dd {

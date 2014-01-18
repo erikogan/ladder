@@ -53,11 +53,15 @@
     %a{href: '', class: 'button pledge radius round'} Take the Pledge
 
 .give-and-get
-  .row
+  %h3 Give & Get
+  .card.row
 
     %div.medium-7.columns
 
-      = image_tag 'giftcard.png'
+      .card
+        = image_tag 'giftcard.png'
+        .type Gift Card for Clothes
+        .type-description Survivors often leave their homes with nothing but the clothes on their back.
 
     %div.medium-4.columns
 
@@ -72,7 +76,7 @@
         and
         %a{href: 'http://www.peacehouse.org/'} Peace House.
 
-  .row
+  .wristband.row
 
     %div.medium-7.columns
 
