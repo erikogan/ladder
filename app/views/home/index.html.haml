@@ -1,4 +1,4 @@
-%h2 Shifting the Culture of Violence
+%h2 Transforming the Culture of Violence
 
 %p Domestic Violence is a “men’s issue” that affects everyone.
 
@@ -26,13 +26,13 @@
           'class' => "has-tip tip-right",
           'title' => "Costs of Intimate Partner Violence Against Women in the United States. 2003. Centers for Disease Control and Prevention, National Centers for Injury Prevention and Control. Atlanta, GA.  Tjaden, Patricia & Thoennes, Nancy."}
           Intimate partner violence causes 18.5
-          million mental health visits each year.
+          million mental health consultations each year.
 
     %p
 
-      In order to end domestic violence we
-      need to shift our culture. We need leaders who can speak up against
-      others who are disrespecting and mistreatment women and children. We
+      To end domestic violence we
+      need to transform our culture. We need leaders who speak up against
+      others who disrespect and mistreat women and children. We
       need leaders to be role models of correct behavior in our communities.
 
       %br/
@@ -62,15 +62,15 @@
         .type Gift Card for Clothes
         .type-description Survivors often leave their homes with nothing but the clothes on their back.
 
-    %div.medium-4.columns
+    %div.ask.medium-4.columns
 
       %p
         Give a gift card for a survivor and get a wrist band.
       %p
-        Domestic violence survivors often leave with nothing and need economic support to rebuild their life.
+        Domestic violence survivors often leave with nothing and need economic support to rebuild their lives.
         Give a gift card to support them through the transition.
       %p
-        The wrist band is another great way to show leadership, and is a
+        The wrist band is not only another great way to show leadership: it is also a
         conversation starter. The purple color is universally used for
         domestic violence. The message "I Pledged" is printed on the outside
         and "Be A Leader" is printed on the inside allowing you to display
@@ -91,7 +91,31 @@
     %div.medium-4.columns
 
       %p
-        %a{href: '', class: 'button pledge radius round'} Give & Get
+        %a{href: '', id: 'give-and-get-button', class: 'button pledge radius round'} Give & Get
+
+      %script{src: "https://checkout.stripe.com/checkout.js"}
+
+      :javascript
+        var handler = StripeCheckout.configure({
+          key: 'pk_test_0aalOfgxrJHVmVhJIq2pqhat',
+          image: '/square-image.png',
+          token: function(token, args) {
+            // Use the token to create the charge with a server-side script.
+          },
+          currency:'USD',
+          billingAddress: true,
+          shippingAddress: true
+        });
+
+        document.getElementById('give-and-get-button').addEventListener('click', function(e) {
+          handler.open({
+            name: 'Lead and Pledge',
+            description: 'Give & Get ($20.00)',
+            amount: 2000,
+
+          });
+          e.preventDefault();
+        });
 
 .next-steps
   %div
@@ -107,8 +131,8 @@
     .tabs-content
       #leading.content.active
         %p
-          Disrespectful language and actions perpetuates a culture of
-          acceptability. By shifting our language we can shift the culture.
+          Disrespectful language and actions perpetuates a culture in which these
+          actions are acceptable. By changing them we can change the culture.
 
         %p
           Be a leader and role model for your children and others. They are
@@ -117,8 +141,9 @@
           neighborhood, and even other men and women.
 
         %p
-          Demonstrate that women are to be valued for more than physical
-          aspects in what you say and do. Show that character, integrity,
+          Demonstrate that women are to be valued for more than their
+          physical appearance or beauty in what you say and do.
+          Show that character, integrity,
           and feminine approaches to problems are valuable. Be willing to
           confront your children about improper behavior that you see.
 
@@ -128,10 +153,10 @@
 
       #anger_management.content
         %p
-          It is important to realize that anger is a completely normal
+          Anger is a normal
           human emotion.  But when it gets out of control it can become
           destructive and lead to violence. It can also make you feel a
-          prisnor to unpredictable, powerful emotions.
+          prisoner to unpredictable, powerful emotions.
 
         %p
           Anger is a natural, adaptive response to threats and evolved to
