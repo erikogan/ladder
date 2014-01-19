@@ -1,6 +1,6 @@
 $(function() {
   var handler = StripeCheckout.configure({
-    key: 'pk_test_0aalOfgxrJHVmVhJIq2pqhat',
+    key: $stripe_key,
     image: '/assets/square.png',
     token: function(token, args) {
       var jqxhr = $.ajax( "http://aws.leadandpledge.com/purchase.php",

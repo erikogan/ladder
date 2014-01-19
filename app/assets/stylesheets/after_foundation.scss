@@ -31,6 +31,7 @@ $darkest-primary: scale-color($primary-color, $lightness: -50%);
 }
 
 div.pledge.row.panel, div.give-and-get {
+  margin-top: 1rem;
   margin-bottom: 9rem;
 }
 
