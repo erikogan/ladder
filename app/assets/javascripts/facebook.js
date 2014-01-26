@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 window.fbAsyncInit = function() {
     FB.init({
-        appId: "197205760473992",
+        appId: $fb_app_id,
         status: true,
         xfbml: true,
         cookie: true
@@ -42,7 +42,7 @@ window.fbAsyncInit = function() {
         if(logged_in == false) {
             connected();
         }
-      }); 
+      });
     });
 
 };
