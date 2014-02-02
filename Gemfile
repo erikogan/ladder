@@ -58,3 +58,12 @@ group :development, :test do
   gem 'debugger'
   gem 'rspec-rails'
 end
+
+# Deployment with Capistrano 3.1
+group :development do
+  gem 'capistrano',         '~> 3.1', require: false
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  # Not sure we need this yet.
+  gem 'capistrano-rvm',     '~> 0.1', require: false
+end
