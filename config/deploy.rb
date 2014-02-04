@@ -5,10 +5,10 @@ set :application, 'lead_and_pledge'
 set :repo_url, 'git@github.com:erikogan/lead_and_pledge.git'
 
 # Default branch is :master
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+ask :branch, proc { ENV['REVISION'] || `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/lead_and_pledge'
+set :deploy_to, '/var/www/leadandpledge.org'
 
 # Default value for :scm is :git
 # set :scm, :git
